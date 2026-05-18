@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Valle - Pruébalo Ahora</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">DEL VALLE</div>
+        <ul class="nav-links">
+            <li><a href="#ingredientes">INGREDIENTES</a></li>
+            <li><a href="#donde-comprar">DONDE COMPRAR</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <!-- El canvas que contendrá el efecto 3D fijado en el fondo -->
+    <div class="canvas-container">
+        <canvas id="juice-canvas"></canvas>
+    </div>
+
+    <!-- Contenido superpuesto -->
+    <main class="content-wrapper">
+        <section class="hero content-section">
+            <h1 class="main-title">PRUÉBALO AHORA</h1>
+            <button class="cta-button">Comprar</button>
+        </section>
+
+        <section class="spacer" id="ingredientes">
+            <div class="glass-card">
+                <h2>Pura Frescura</h2>
+                <p>Descubre el increíble sabor natural en cada gota. Seleccionamos las mejores frutas para brindarte una experiencia inigualable.</p>
+            </div>
+        </section>
+        
+        <section class="spacer" id="donde-comprar">
+             <div class="glass-card">
+                <h2>Ingredientes Naturales</h2>
+                <p>100% fruta, sin conservadores artificiales. Siente la energía de la naturaleza que te acompaña todo el día.</p>
+            </div>
+        </section>
+        
+        <section class="spacer" id="contacto">
+             <div class="glass-card">
+                <h2>El Sabor de lo Auténtico</h2>
+                <p>No esperes más para refrescarte. Disponible en tiendas y supermercados de todo el país.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Librerías de animación GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
